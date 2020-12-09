@@ -151,7 +151,7 @@ def Training2(train_data, train_wc, categories, test_data):
 	
 
 def main():
-	to_exclude = [i for i in range(2, 19300)]# specifies the amount of data to load in (leave list empty to load all data)
+	to_exclude = [i for i in range(2, 19800)]# specifies the amount of data to load in (leave list empty to load all data)
 	games = pd.read_csv('games.csv', header=0, encoding='latin-1', skiprows=to_exclude)
 	opening_cats = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4}
 	labels = []
